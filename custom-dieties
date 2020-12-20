@@ -5,7 +5,7 @@
 		<description>Gods made by Tjen</description>
 		<author url="https://github.com/Vontjen">Vontjen</author>
 		<update version="0.2">
-			<file name="deities.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/deities.xml" />
+			<file name="deities.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/main/custom-dieties" />
 		</update>
 	</info>
 	<element name="Velsharoon" type="Deity" source="Custom" id="ID_CUSTOM_DEITY_VELSHAROON">
