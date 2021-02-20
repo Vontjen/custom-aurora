@@ -14,6 +14,7 @@
             <set name="abbreviation">JORN</set>
             <set name="image">https://cdn.discordapp.com/attachments/377546018486484992/809004179761922068/image0.jpg</set>
             <set name="author" abbreviation="JORN">Jorn Dekker</set>
+            <set name="url"></set>
             <set name="official">false</set>
             <set name="supplement">false</set>
             <set name="playtest">true</set>
