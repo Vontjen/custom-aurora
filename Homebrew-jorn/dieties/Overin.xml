@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Overin</name>
+		<description>God of hope</description>
+		<author>Jorn</author>
+		<update version="0.0.1">
+			<file name="Overin.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/dieties/Overin.xml" />
+		</update>
+	</info>
+	<element name="Overin" type="Deity" source="Jorn-homebrew" id="ID_JORN_DEITY_OVERIN">
+		<description>
+			<p class="flavor">Overin is the god of hope, embodied in all forms. He can be worshipped by a mother who hopes her sick child will be cured of a deadly disease. He can also be worshipped by a son who hopes that his mother will finally die so that he can inherit.</p>
+            <p class="flavor">The god is often depicted by a shooting star and has no "fixed" human form. When the mother worships him, he takes on the form of a doctor, in the son's case rather that of a shadowed killer.</p>
+            <p class="flavor">The only condition for Overin is that the hope be sincere and unshakable.The priests of this god do not judge the nature of the wish but do their best to help the followers. Followers of Overin often come into conflict with the followers of other gods. This is because most are convinced that his followers have no moral compass and that Overin wants to usurp the power of other gods (because it is not clear where the boundaries of his domain lie).</p>
+            <p class="flavor">The worship of this god is popular among the low ranks of the population in Jodlens and among The Children of Prumathe. The faith has no temples nor is it recognized as a religion by the Republic.</p>
+        </description>
+		<setters>
+			<set name="alignment">N</set>
+			<set name="domains">Hope</set>
+			<set name="symbol">Campfire</set>
+		</setters>
+		<sheet>
+			<description>God of Hope</description>
+		</sheet>
+	</element>
+</elements>

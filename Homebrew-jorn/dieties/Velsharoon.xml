@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Custom dieties of tjen</name>
-		<description>Gods made by Tjen</description>
+		<name>Velsharoon</name>
+		<description>God of death</description>
 		<author url="https://github.com/Vontjen">Vontjen</author>
-		<update version="0.2">
-			<file name="deities.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/main/custom-dieties" />
+		<update version="0.0.1">
+			<file name="Velsharoon.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/dieties/Velsharoon.xml" />
 		</update>
 	</info>
-	<element name="Velsharoon" type="Deity" source="Custom" id="ID_CUSTOM_DEITY_VELSHAROON">
+	<element name="Velsharoon" type="Deity" source="Jorn-homebrew" id="ID_DEITY_VELSHAROON">
 		<description>
 			<p class="flavor">Archmage of Necromancy</p>
 		</description>

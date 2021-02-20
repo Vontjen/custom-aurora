@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hope Domain</name>
+        <description>The Hope domain from Jorn</description>
+        <update version="0.0.1">
+            <file name="cleric-hopedomain.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/archetypes/cleric-hopedomain.xml" />
+        </update>
+    </info>
+
+    <element name="Hope Domain" type="Archetype" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_HOPE_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>The clerics who govern the Domain of Hope are also called the Clerics of Overin or “The Angels”. They are bound to be morally grey people as hope can take many forms: one can have the hope to find the cure for a disease and one can have hope for someone’s demise. Ofcourse, these clerics have their own moral compass, but they have learned to look past this when dealing with others. They view hope as a powerful emotion that serves to empower those, who use it purely, to achieve their goals. Because Hope is such a broad domain and because of their strong ties to The Children of Prumathe - a criminal organization based in Jodlens - they are often viewed with suspicion by others. They have therefore learned to hide their beliefs from others and often pose as a cleric of another God. At least until the worship of Overin is widespread.</p>
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DOMAIN_SPELLS" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BONUS_PROFICIENCIES" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BRINGER_OF_HOPE" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_PROTECTOR_OF_THE_HOPEFUL" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_WISHFUL_THINKING" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DIVINE_STRIKE" />
+            <div element="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_NEVER_DESPAIR" />
+
+        </description>
+        <sheet display="false">
+            <description>The clerics who govern the Domain of Hope are also called the Clerics of Overin or “The Angels”. They are bound to be morally grey people as hope can take many forms: one can have the hope to find the cure for a disease and one can have hope for someone’s demise. Ofcourse, these clerics have their own moral compass, but they have learned to look past this when dealing with others. They view hope as a powerful emotion that serves to empower those, who use it purely, to achieve their goals. Because Hope is such a broad domain and because of their strong ties to The Children of Prumathe - a criminal organization based in Jodlens - they are often viewed with suspicion by others. They have therefore learned to hide their beliefs from others and often pose as a cleric of another God. At least until the worship of Overin is widespread.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DOMAIN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BRINGER_OF_HOPE" level="1" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_PROTECTOR_OF_THE_HOPEFUL" level="2" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_WISHFUL_THINKING" level="6" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_NEVER_DESPAIR" level="17" />
+        </rules>
+    </element>
+
+    <element name="Domain Spells" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the Hope Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+            <h5>Hope Domain Spells</h5>
+            <table>
+              <thead>
+                <tr><td>Cleric Level</td><td>Spells</td></tr>
+              </thead>
+              <tr><td>1st</td><td><em>Bane, Bless</em></td></tr>
+              <tr><td>3rd</td><td><em>Aid, Enhance Ability</em></td></tr>
+              <tr><td>5th</td><td><em>Bestow Curse, Beacon of Hope</em></td></tr>
+              <tr><td>7th</td><td><em>Death Ward, Elemental Bane</em></td></tr> 
+              <tr><td>9th</td><td><em>Skill Empowerment, Holy Weapon</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_BANE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SKILL_EMPOWERMENT" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLY_WEAPON" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you choose this domain at first level, you gain proficiency in the deception skill.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+    <element name="Bringer of hope" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BRINGER_OF_HOPE">
+        <description>
+            <p>Also at 1st level, you have the ability to instill hope in a creature. Whenever a creature that is within 15ft of you makes an attack roll, you can use your reaction to grant it advantage. Alternatively you can use this feature to grant a creature disadvantage on the attack roll. You can use this feature a number of times equal to your Wisdom modifier (a minimum of one). </p>
+            <p class="indent">You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You have the ability to instill hope in a creature. Whenever a creature that is within 15ft of you makes an attack roll, you can use your reaction to grant it advantage. Alternatively you can use this feature to grant a creature disadvantage on the attack roll. You can use this feature a number of times equal to your Wisdom modifier (minimum of one). You regain all expended uses when you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Protector of the Hopeful" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_PROTECTOR_OF_THE_HOPEFUL">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to protect hope and the hopeful from danger.  </p>
+            <p class="indent">When a creature you can see within 30ft is targeted by a weapon or spell attack, you can use your reaction to grant that creature a +2 bonus to its AC for 1 minute.</p>
+            <p class="indent">Additionally, attacks of opportunity made against that creature are made with disadvantage.</p>
+        </description>
+        <sheet alt="Protector of the Hopeful" usage="Channel Divinity">
+            <description>You can use your Channel Divinity to protect hope and the hopeful from danger.When a creature you can see within 30ft is targeted by a weapon or spell attack, you can use your reaction to grant that creature a +2 bonus to its AC for 1 minute. Additionally, attacks of opportunity made against that creature are made with disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity: Wishful Thinking" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_CD_WISHFUL_THINKING">
+        <description>
+            <p>Starting at 6th level, you can use your Channel Divinity to make people excel in things they are usually lacking in.</p>
+            <p class="indent">As an action you may imbue a creature with the ability to exceed their normal capabilities. For the duration, the creature may add his proficiency modifier to skill checks of an Ability (for example Strength or Dexterity) you choose.</p>
+            <p class="indent">This ability lasts for a total of minutes equal to half your Wisdom Modifier.</p>
+        </description>
+        <sheet alt="Wishful Thinking" usage="Channel Divinity">
+            <description>You can use your Channel Divinity to make people excel in things they are usually lacking in.As an action you may imbue a creature with the ability to exceed their normal capabilities. For the duration, the creature may add his proficiency modifier to skill checks of an Ability (for example Strength or Dexterity) you choose. This ability lasts for a total of minutes equal to half your Wisdom Modifier.</description>
+        </sheet>
+    </element>
+    <element name="Divine Strike" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_DIVINE_STRIKE">
+        <description>
+          <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the damage increases to 2d8.</p>
+        </description>
+        <sheet>
+          <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target.</description>
+          <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+        </sheet>
+    </element> 
+    <element name="Never Despair" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_NEVER_DESPAIR">
+        <description>
+            <p>Starting at 17th level, you can use your action to use the power of your God to safeguard your allies from despair, while weakening their enemies at the same time. </p>
+            <p>You generate a bright light in a 20ft radius around you for 1 minute. Allies within range are immune to fear and may add an amount to their attack rolls, ability checks and saving throws equal to half your Wisdom modifier. </p>
+            <p>Additionally, enemies must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</p>
+        </description>
+        <sheet>
+            <description>You can use your action to use the power of your God to safeguard your allies from despair, while weakening their enemies at the same time. You generate a bright light in a 20ft radius around you for 1 minute. Allies within range are immune to fear and may add an amount to their attack rolls, ability checks and saving throws equal to half your Wisdom modifier. Additionally, enemies must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</description>
+        </sheet>
+    </element>
+</elements>
