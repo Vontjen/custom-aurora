@@ -3,7 +3,7 @@
     <info>
         <name>Hope Domain</name>
         <description>The Hope domain from Jorn</description>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-hopedomain.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/archetypes/cleric-hopedomain.xml" />
         </update>
     </info>
@@ -61,9 +61,9 @@
             <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_BANE" level="7" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_SKILL_EMPOWERMENT" level="9" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" id="ID_PHB_SPELL_HOLY_WEAPON" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ELEMENTAL_BANE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" level="9" spellcasting="Cleric" prepared="true" />
         </rules>
     </element>
     <element name="Bonus Proficiencies" type="Archetype Feature" source="Jorn-homebrew" id="ID_JORN_ARCHETYPE_FEATURE_HOPE_DOMAIN_BONUS_PROFICIENCIES">
