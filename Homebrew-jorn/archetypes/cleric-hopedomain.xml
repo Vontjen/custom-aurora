@@ -3,7 +3,7 @@
     <info>
         <name>Hope Domain</name>
         <description>The Hope domain from Jorn</description>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-hopedomain.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/archetypes/cleric-hopedomain.xml" />
         </update>
     </info>
@@ -119,10 +119,10 @@
         <description>
             <p>Starting at 17th level, you can use your action to use the power of your God to safeguard your allies from despair, while weakening their enemies at the same time. </p>
             <p>You generate a bright light in a 20ft radius around you for 1 minute. Allies within range are immune to fear and may add an amount to their attack rolls, ability checks and saving throws equal to half your Wisdom modifier. </p>
-            <p>Additionally, enemies must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</p>
+            <p>Additionally, when enemies first enter the area of effect, they must make a wisdom saving throw or they must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</p>
         </description>
         <sheet>
-            <description>You can use your action to use the power of your God to safeguard your allies from despair, while weakening their enemies at the same time. You generate a bright light in a 20ft radius around you for 1 minute. Allies within range are immune to fear and may add an amount to their attack rolls, ability checks and saving throws equal to half your Wisdom modifier. Additionally, enemies must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</description>
+            <description>You can use your action to use the power of your God to safeguard your allies from despair, while weakening their enemies at the same time. You generate a bright light in a 20ft radius around you for 1 minute. Allies within range are immune to fear and may add an amount to their attack rolls, ability checks and saving throws equal to half your Wisdom modifier. when enemies first enter the area of effect, they must make a wisdom saving throw or they must subtract the same amount from their attack rolls, ability checks and saving throws. You regain this feature after finishing a long rest</description>
         </sheet>
     </element>
 </elements>
