@@ -2,7 +2,7 @@
 <index>
     <info>
         <name>Jorn's homebrew</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="jorn-homebrew.index" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/jorn-homebrew.index" />
         </update>
     </info>
@@ -13,6 +13,8 @@
         <file name="Overin.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/dieties/Overin.xml" />
 
         <file name="cleric-hopedomain.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/archetypes/cleric-hopedomain.xml" />
+        <file name="Specter.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/companions/Specter.xml" />
+
 
     </files>
 </index>

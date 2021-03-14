@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Specter</name>
+        <update version="0.0.1">
+            <file name="Specter.xml" url="https://raw.githubusercontent.com/Vontjen/custom-aurora/master/Homebrew-jorn/companions/Specter.xml" />
+        </update>
+    </info>
+        
+	<element name="Specter" type="Companion" source="jorn-homebrew" id="ID_JORN_HOMEBREW_BIMI_SPECTER">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some are spawned when dark magic or the touch of a wraith rips a soul from a living body.</p>
+			<p class="indent">Beyond Redemption. When a ghost’s unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the Material Plane, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world. Undying Hatred. Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow. Dwellers in Darkness. Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return. At the first light of dawn, they retreat back into the darkness, where they remain until night falls again.Undead Nature. A specter doesn’t require air, food, drink, or sleep.</p>
+        </description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">10</set>
+			<set name="ac">12</set>
+			<set name="hp">22 (5d8)</set>
+			<set name="speed">0 ft., fly 50 ft. (hover)</set>
+			<set name="languages">Understands all languages it knew in life but can't speak</set>
+			<set name="senses">Darkvision 60 ft., passive Perception 10</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_INCORPOREAL_MOVEMENT,ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY,ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_CONDITION_IMMUNITY </set>
+			<set name="actions">ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_LIFE_DRAIN</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="22" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="50" bonus="base" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Incorporeal Movement" type="Companion Trait" source="jorn-homebrew" id="ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_INCORPOREAL_MOVEMENT">
+		<description>
+			<p>The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+	<element name="Sunlight Sensitivity" type="Companion Trait" source="jorn-homebrew" id="ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</description>
+		</sheet>
+	</element>
+	<element name="Condition Immunity" type="Companion Trait" source="jorn-homebrew" id="ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_CONDITION_IMMUNITY ">
+		<description>
+			<p>Due to the nature of this creature, it is immune to Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious </p>
+		</description>
+		<sheet>
+			<description>Condition Immunities: Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</description>
+		</sheet>
+	</element>
+	<element name="Life Drain." type="Companion Action" source="jorn-homebrew" id="ID_JORN_HOMEBREW_BIMI_SPECTER_TRAIT_SPECTER_LIFE_DRAIN">
+		<description>
+			<p> Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>
+		</description>
+		<sheet>
+			<description> Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</description>
+		</sheet>
+	</element>
+	
+
+</elements>
